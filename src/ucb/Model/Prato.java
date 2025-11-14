@@ -1,17 +1,16 @@
 package ucb.Model;
 
-
 public class Prato {
     private String nome;
     private String ingredientes;
 
     public Prato(){}
-    public Prato(String nome){
+
+    public Prato(String nome, String ingredientes){
         this.nome = nome;
-    }
-    public Prato(String ingredientes) {
         this.ingredientes = ingredientes;
     }
+
     public String getNome() {
         return nome;
     }
