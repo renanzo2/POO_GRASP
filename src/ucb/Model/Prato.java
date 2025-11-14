@@ -1,5 +1,16 @@
 package ucb.Model;
 
+/**
+ * Padrão GRASP: Information Expert (Especialista na Informação)
+ *
+ * Justificativa: A classe 'Prato' é a especialista em conhecer
+ * seus próprios dados (nome e ingredientes). Em vez de outra classe
+ * consultar (get) os dados e manipulá-los, a classe 'Prato'
+ * centraliza e protege suas próprias informações.
+ *
+ * Onde: A classe inteira.
+ */
+
 public class Prato {
     private String nome;
     private String ingredientes;
@@ -11,6 +22,8 @@ public class Prato {
         this.ingredientes = ingredientes;
     }
 
+    // Métodos getters/setters são a manifestação do Information Expert,
+    // pois a classe provê o acesso controlado à sua informação.
     public String getNome() {
         return nome;
     }
